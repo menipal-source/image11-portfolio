@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="תיק עבודות image11">
+<meta property="og:description" content="חמש חתונות אמיתיות שצילמנו ב-2026">
+<meta property="og:image" content="img/noa-08l.webp">
+<title>תיק עבודות image11</title>
+<meta name="description" content="חמש חתונות אמיתיות שצילמנו ב-2026">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bellefair&family=Assistant:wght@300;400;600&display=swap">
+<style>
+/* Layout: a contact-sheet index up top, then one long chapter per couple: title block, wide cover, masonry of frames. RTL. */
+:root{
+  --bg:#F6F3F1;          /* pearl, faint blush */
+  --surface:#EDE7E3;
+  --fg:#2A2321;          /* espresso ink */
+  --muted:#7A6D68;
+  --line:#DCD2CD;
+  --accent:#8C6557;      /* mocha rose */
+  --display:"Bellefair","Frank Ruhl Libre",Georgia,serif;
+  --body:"Assistant","Heebo","Segoe UI",Arial,sans-serif;
+  --gut:clamp(16px,4vw,56px);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#161312;--surface:#211C1A;--fg:#EFE8E4;--muted:#A89A94;--line:#352D2A;--accent:#CFA595;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#161312;--surface:#211C1A;--fg:#EFE8E4;--muted:#A89A94;--line:#352D2A;--accent:#CFA595;color-scheme:dark}
+
+*{box-sizing:border-box}
+html,body{direction:rtl}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.65;
+  padding-inline:var(--gut);padding-block:0 64px;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1240px;margin-inline:auto}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);margin-inline:calc(var(--gut)*-1);padding:12px var(--gut);
+  border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;align-items:center;gap:20px;flex-wrap:wrap;justify-content:space-between}
+.brand{font-family:var(--display);font-size:24px;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.brand small{font-family:var(--body);font-size:12px;letter-spacing:.14em;color:var(--muted);margin-inline-start:8px;text-transform:uppercase}
+.chips{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;max-width:100%}
+.chips::-webkit-scrollbar{display:none}
+.chips a{font-size:14px;text-decoration:none;padding:5px 12px;border:1px solid var(--line);border-radius:999px;white-space:nowrap;color:var(--muted)}
+.chips a:hover,.chips a:focus-visible{color:var(--fg);border-color:var(--accent);outline:none}
+
+/* intro */
+.intro{padding-block:clamp(40px,8vw,96px) clamp(28px,5vw,56px);display:grid;gap:18px;max-width:780px}
+.eyebrow{font-size:13px;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,7.5vw,92px);line-height:1.02;margin:0;text-wrap:balance}
+.intro p{margin:0;color:var(--muted);font-size:clamp(17px,1.6vw,20px);max-width:60ch;font-weight:300}
+
+/* contact-sheet index */
+.index{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:clamp(8px,1.4vw,18px);padding-bottom:clamp(40px,7vw,88px);border-bottom:1px solid var(--line)}
+.card{display:grid;gap:10px;text-decoration:none;min-width:0}
+.card .ph{aspect-ratio:3/4;overflow:hidden;background:var(--surface)}
+.card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.card:hover img{transform:scale(1.04)}
+.card b{font-family:var(--display);font-weight:400;font-size:clamp(18px,1.8vw,24px);line-height:1.1}
+.card span{font-size:13px;color:var(--muted);letter-spacing:.02em}
+@media (max-width:760px){.index{grid-template-columns:repeat(2,minmax(0,1fr))}.index .card:first-child{grid-column:1/-1}.index .card:first-child .ph{aspect-ratio:4/3}}
+
+/* chapters */
+.chapter{padding-block:clamp(56px,9vw,120px) 0;scroll-margin-top:70px}
+.head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(20px,4vw,64px);align-items:end;margin-bottom:clamp(20px,3vw,36px)}
+.head h2{font-family:var(--display);font-weight:400;font-size:clamp(46px,7vw,88px);line-height:1;margin:0;text-wrap:balance}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--muted);margin-bottom:10px}
+.meta em{font-style:normal;color:var(--accent)}
+.head p{margin:0;font-size:18px;font-weight:300;max-width:52ch}
+@media (max-width:760px){.head{grid-template-columns:1fr}.chapter{scroll-margin-top:120px}.cover img{max-height:70vh}}
+.cover{margin:0 0 clamp(10px,1.4vw,16px);cursor:zoom-in;overflow:hidden;background:var(--surface)}
+.cover img{width:100%;max-height:82vh;object-fit:cover;display:block}
+.grid{columns:3 280px;column-gap:clamp(10px,1.4vw,16px)}
+.grid figure{margin:0 0 clamp(10px,1.4vw,16px);break-inside:avoid;background:var(--surface);cursor:zoom-in;overflow:hidden}
+.grid img{width:100%;height:auto;display:block;transition:opacity .3s}
+.grid figure:hover img,.cover:hover img{opacity:.92}
+figure:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* closing */
+.close{margin-top:clamp(72px,10vw,140px);padding-top:clamp(40px,6vw,72px);border-top:1px solid var(--line);display:grid;gap:18px;justify-items:start;max-width:720px}
+.close h3{font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0;text-wrap:balance}
+.close p{margin:0;color:var(--muted);font-weight:300}
+.btn{display:inline-block;background:var(--fg);color:var(--bg);text-decoration:none;padding:13px 28px;border-radius:999px;font-weight:600;font-size:16px}
+.btn:hover,.btn:focus-visible{background:var(--accent);outline:none}
+.sig{font-size:13px;color:var(--muted);letter-spacing:.06em}
+
+/* lightbox */
+.lb{position:fixed;inset:0;z-index:20;background:rgba(14,11,10,.96);display:grid;grid-template-rows:auto 1fr auto;color:#EFE8E4}
+.lb-top{display:flex;justify-content:space-between;align-items:center;padding:calc(12px + env(safe-area-inset-top,0px)) 16px 12px;font-size:14px;color:#BFB2AC}
+.lb-stage{position:relative;display:grid;place-items:center;min-height:0;padding:0 8px}
+.lb-stage img{max-width:100%;max-height:100%;object-fit:contain;user-select:none;-webkit-user-drag:none}
+.lb button{background:none;border:0;color:#EFE8E4;cursor:pointer;font:inherit}
+.lb .x{font-size:30px;line-height:1;padding:4px 10px}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%);width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.08);font-size:26px}
+.lb .nav:hover,.lb button:focus-visible{background:rgba(255,255,255,.18);outline:none}
+.lb .prev{right:14px}.lb .next{left:14px}
+@media (max-width:640px){.lb .nav{display:none}}
+.lb-bot{padding:10px 16px calc(14px + env(safe-area-inset-bottom,0px));text-align:center;font-size:13px;color:#948680}
+</style>
+</head>
+<body>
+
+
+<header class="bar"><div class="wrap">
+  <a class="brand" href="#top">image11<small>צילום חתונות</small></a>
+  <nav class="chips" id="chips" aria-label="זוגות"></nav>
+</div></header>
+
+<main class="wrap" id="top">
+  <section class="intro">
+    <span class="eyebrow">תיק עבודות · עונת 2026</span>
+    <h1>חמש חתונות.<br>חמישה סיפורים אמיתיים.</h1>
+    <p>ככה נראה יום חתונה דרך המצלמה שלנו, מההתארגנות בבוקר ועד הריקוד האחרון. בחרו זוג ותעברו איתם את היום.</p>
+  </section>
+  <nav class="index" id="index" aria-label="החתונות בתיק"></nav>
+  <div id="chapters"></div>
+
+  <section class="close">
+    <span class="eyebrow">החתונה הבאה בתיק</span>
+    <h3>רוצים שנספר ככה גם את היום שלכם?</h3>
+    <p>נשמח לשמוע על התאריך, המקום והאווירה שאתם חולמים עליה.</p>
+    <a class="btn" href="https://image11.co.il/" target="_blank" rel="noopener">לבדיקת תאריך פנוי</a>
+    <span class="sig">image11.co.il</span>
+  </section>
+</main>
+
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="תצוגת תמונה">
+  <div class="lb-top"><span id="lbCap"></span><button class="x" id="lbX" aria-label="סגירה">×</button></div>
+  <div class="lb-stage" id="lbStage">
+    <button class="nav prev" id="lbPrev" aria-label="התמונה הקודמת">›</button>
+    <img id="lbImg" alt="">
+    <button class="nav next" id="lbNext" aria-label="התמונה הבאה">‹</button>
+  </div>
+  <div class="lb-bot" id="lbCount"></div>
+</div>
+
+<script>
+document.documentElement.dir="rtl";document.documentElement.lang="he";
+const W=[{"k": "noa", "names": "נועה ודוד", "venue": "טרוסא", "date": "אוגוסט 2026", "cover": 8, "line": "מהבוקר במלון ועד הרחבה בלילה. יער של אור אחר צהריים, חופה תחת כיפת השמיים ומסיבה שלא נגמרה.", "imgs": [[1749, 2624], [3387, 2258], [2336, 3504], [3936, 2624], [1324, 883], [1278, 1917], [2336, 3504], [2319, 3478], [2336, 3504], [2336, 3504], [2624, 3936], [2336, 3504], [3504, 2336], [3504, 2336], [2336, 3504], [2624, 3936], [2336, 3504], [3936, 2624], [3504, 2336], [879, 1319], [3504, 2336], [3504, 2336]]}, {"k": "alina", "names": "אלינה ועומר", "venue": "ארבע עונות", "date": "יוני 2026", "cover": 13, "line": "בוקר לבן ורגוע בבית, מפגש ראשון שקט, ואז שדה ירוק וים טורקיז. יום של אור רך ושל צחוק.", "imgs": [[2624, 3936], [3782, 2521], [2624, 3936], [3936, 2624], [2624, 3936], [1855, 2782], [3848, 2565], [2624, 3936], [4000, 6000], [2624, 3936], [3008, 2000], [2624, 1749], [2624, 3936], [3936, 2624], [3936, 2624], [2617, 1745], [2624, 3936], [2000, 1330], [2624, 3936], [2624, 3936], [3936, 2624]]}, {"k": "arel", "names": "אראל ותומר", "venue": "טזורו", "date": "מאי 2026", "cover": 18, "line": "חברות בבורדו, מדרגות בין העצים וחורשת זיתים בשעת זהב. הרבה תנועה, הרבה שמלה והמון אהבה.", "imgs": [[2016, 3024], [1344, 2016], [1344, 2016], [3024, 2016], [1941, 2911], [981, 1471], [1373, 2059], [2624, 3936], [2624, 3936], [2016, 3024], [1068, 1607], [2016, 3024], [3024, 2016], [1749, 2624], [2624, 3936], [2624, 3936], [2624, 3936], [2016, 3024], [3936, 2624], [4640, 6960]]}, {"k": "chen", "names": "חן ועילי", "venue": "נסיה", "date": "מאי 2026", "cover": 14, "line": "תלתלים, שדות חיטה זהובים וכרמים ירוקים. צילומי זוג פתוחים לנוף עם החברים הכי קרובים.", "imgs": [[1841, 1226], [4000, 6000], [2166, 1443], [4000, 2667], [2371, 3556], [3016, 4528], [6000, 4000], [3016, 4528], [4000, 6000], [4000, 6000], [4528, 3016], [4528, 3016], [4000, 6000], [6000, 4000], [4000, 6000], [3689, 2457], [2380, 3570], [6000, 4000], [6000, 4000], [6000, 4000], [4000, 6000]]}, {"k": "nofar", "names": "נופר ובר", "venue": "טאו", "date": "מאי 2026", "cover": 15, "line": "חלוקים ורודים, שחור לבן דרמטי על קיר אבן, חופה בין זיקוקים ורחבה בוערת.", "imgs": [[4000, 6000], [4000, 6000], [6000, 4000], [4000, 2667], [6000, 4000], [3016, 4528], [4000, 6000], [4000, 6000], [3936, 2624], [4000, 6000], [6000, 4000], [3880, 2584], [4000, 6000], [2624, 3936], [6000, 4000], [4000, 6000], [3936, 2624], [3936, 2624], [4000, 6000], [6000, 4000], [4640, 6960], [6960, 4640]]}];
+const $=s=>document.querySelector(s);
+const src=(k,n,t)=>`img/${k}-${String(n).padStart(2,"0")}${t}.webp`;
+const imgTag=(k,n,[w,h],alt,sizes,eager)=>`<img src="${src(k,n,"s")}" srcset="${src(k,n,"s")} 760w, ${src(k,n,"l")} 1800w" sizes="${sizes}" width="${w}" height="${h}" alt="${alt}" ${eager?"":'loading="lazy"'} decoding="async">`;
+
+$("#chips").innerHTML=W.map(w=>`<a href="#${w.k}">${w.names}</a>`).join("");
+$("#index").innerHTML=W.map((w,i)=>`<a class="card" href="#${w.k}"><div class="ph">${imgTag(w.k,w.cover,w.imgs[w.cover],w.names,"(max-width:760px) 50vw, 240px",i<5)}</div><b>${w.names}</b><span>${w.venue} · ${w.date}</span></a>`).join("");
+$("#chapters").innerHTML=W.map(w=>{
+  const rest=w.imgs.map((d,n)=>n).filter(n=>n!==w.cover);
+  return `<section class="chapter" id="${w.k}">
+    <div class="head"><h2>${w.names}</h2><div><div class="meta"><em>${w.venue}</em><span>${w.date}</span><span>${w.imgs.length} תמונות מהיום</span></div><p>${w.line}</p></div></div>
+    <figure class="cover" tabindex="0" data-k="${w.k}" data-n="${w.cover}">${imgTag(w.k,w.cover,w.imgs[w.cover],w.names+", "+w.venue,"(max-width:1240px) 100vw, 1240px")}</figure>
+    <div class="grid">${rest.map(n=>`<figure tabindex="0" data-k="${w.k}" data-n="${n}">${imgTag(w.k,n,w.imgs[n],"מתוך החתונה של "+w.names,"(max-width:640px) 100vw, (max-width:1000px) 50vw, 420px")}</figure>`).join("")}</div>
+  </section>`}).join("");
+
+// lightbox
+const lb=$("#lb"),img=$("#lbImg");let cur=null,list=[],pos=0,lastFocus=null;
+function show(){const w=cur,n=list[pos];img.src=src(w.k,n,"l");img.alt=w.names;
+  $("#lbCap").textContent=`${w.names} · ${w.venue}`;$("#lbCount").textContent=`${pos+1} / ${list.length}`;
+  const nx=list[(pos+1)%list.length];new Image().src=src(w.k,nx,"l");}
+function open(k,n){cur=W.find(w=>w.k===k);list=[cur.cover,...cur.imgs.map((d,i)=>i).filter(i=>i!==cur.cover)];
+  pos=list.indexOf(+n);lastFocus=document.activeElement;lb.hidden=false;document.body.style.overflow="hidden";show();$("#lbX").focus();}
+function close(){lb.hidden=true;document.body.style.overflow="";img.removeAttribute("src");lastFocus&&lastFocus.focus();}
+const go=d=>{pos=(pos+d+list.length)%list.length;show();};
+document.addEventListener("click",e=>{const f=e.target.closest("figure[data-k]");if(f)open(f.dataset.k,f.dataset.n);});
+document.addEventListener("keydown",e=>{
+  if(lb.hidden){const f=e.target.closest&&e.target.closest("figure[data-k]");if(f&&(e.key==="Enter"||e.key===" ")){e.preventDefault();open(f.dataset.k,f.dataset.n);}return;}
+  if(e.key==="Escape")close();else if(e.key==="ArrowLeft")go(1);else if(e.key==="ArrowRight")go(-1);});
+$("#lbX").onclick=close;$("#lbNext").onclick=()=>go(1);$("#lbPrev").onclick=()=>go(-1);
+$("#lbStage").addEventListener("click",e=>{if(e.target.id==="lbStage")close();});
+let tx=null;lb.addEventListener("touchstart",e=>{tx=e.touches[0].clientX},{passive:true});
+lb.addEventListener("touchend",e=>{if(tx==null)return;const dx=e.changedTouches[0].clientX-tx;if(Math.abs(dx)>45)go(dx>0?1:-1);tx=null;});
+</script>
+
+</body>
+</html>
